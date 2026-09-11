@@ -119,13 +119,13 @@ I request official agency onboarding and binding instructions for Chamet.`
   };
 
   return (
-    <div className="fixed inset-0 z-50 overflow-y-auto bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
-      <div className="relative w-full max-w-xl bg-zinc-950 border border-zinc-800 rounded-lg p-6 sm:p-8 shadow-2xl my-8">
+    <div className="fixed inset-0 z-50 overflow-y-auto bg-black/80 backdrop-blur-sm flex items-start sm:items-center justify-center p-3 sm:p-4">
+      <div className="relative w-full max-w-xl bg-zinc-950 border border-zinc-800 rounded-lg p-5 sm:p-8 shadow-2xl my-auto max-h-[92vh] overflow-y-auto">
         
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-5 right-5 w-7 h-7 rounded-md bg-zinc-900 border border-zinc-800 hover:bg-zinc-800 text-zinc-400 hover:text-zinc-200 flex items-center justify-center transition-colors"
+          className="absolute top-4 right-4 sm:top-5 sm:right-5 w-7 h-7 rounded-md bg-zinc-900 border border-zinc-800 hover:bg-zinc-800 text-zinc-400 hover:text-zinc-200 flex items-center justify-center transition-colors z-10"
         >
           <X className="w-4 h-4" />
         </button>

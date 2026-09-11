@@ -7,10 +7,10 @@ export default function Hero({ onOpenApply }) {
       <div className="max-w-6xl mx-auto px-6">
         
         {/* Subtle Category Pill */}
-        <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-md bg-zinc-900 border border-zinc-800 text-zinc-300 text-xs font-normal mb-8">
+        <div className="inline-flex flex-wrap items-center gap-x-2 gap-y-1 px-2.5 py-1 rounded-md bg-zinc-900 border border-zinc-800 text-zinc-300 text-xs font-normal mb-8">
           <span className="w-1.5 h-1.5 rounded-full bg-zinc-400"></span>
           <span>Authorized Chamet Talent Partner</span>
-          <span className="text-zinc-600">|</span>
+          <span className="text-zinc-600 hidden sm:inline">|</span>
           <span className="text-zinc-400">18+ Broadcaster Recruitment</span>
         </div>
 
@@ -47,10 +47,10 @@ export default function Hero({ onOpenApply }) {
             </div>
 
             {/* Action Buttons: Email & Apply */}
-            <div className="flex flex-wrap items-center gap-3 pt-4">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-4">
               <button
                 onClick={onOpenApply}
-                className="px-5 py-2.5 rounded-md bg-zinc-100 text-zinc-950 hover:bg-zinc-200 font-medium text-xs transition-colors flex items-center gap-2"
+                className="w-full sm:w-auto px-5 py-2.5 rounded-md bg-zinc-100 text-zinc-950 hover:bg-zinc-200 font-medium text-xs transition-colors flex items-center justify-center gap-2"
               >
                 <span>Apply as Broadcaster</span>
                 <ArrowRight className="w-3.5 h-3.5" />
@@ -58,7 +58,7 @@ export default function Hero({ onOpenApply }) {
 
               <a
                 href="mailto:recruitment@veyra.agency"
-                className="px-5 py-2.5 rounded-md border border-zinc-800 text-zinc-300 hover:bg-zinc-900 hover:text-zinc-100 font-normal text-xs transition-colors flex items-center gap-2"
+                className="w-full sm:w-auto px-5 py-2.5 rounded-md border border-zinc-800 text-zinc-300 hover:bg-zinc-900 hover:text-zinc-100 font-normal text-xs transition-colors flex items-center justify-center gap-2"
               >
                 <Mail className="w-3.5 h-3.5" />
                 <span>Email Agency Team</span>
@@ -68,19 +68,19 @@ export default function Hero({ onOpenApply }) {
                 href="https://www.chamet.com/"
                 target="_blank"
                 rel="noreferrer"
-                className="px-3 py-2.5 text-xs text-zinc-500 hover:text-zinc-300 transition-colors inline-flex items-center gap-1"
+                className="py-1 text-xs text-zinc-500 hover:text-zinc-300 transition-colors inline-flex items-center justify-center sm:justify-start gap-1"
               >
                 <span>chamet.com</span>
                 <ExternalLink className="w-3 h-3" />
               </a>
             </div>
 
-            <div className="pt-2 flex items-center gap-4 text-[11px] text-zinc-500">
+            <div className="pt-2 flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 text-[11px] text-zinc-500">
               <span className="flex items-center gap-1.5">
                 <ShieldCheck className="w-3.5 h-3.5 text-zinc-400" />
                 Strict 18+ Biometric Check
               </span>
-              <span>•</span>
+              <span className="hidden sm:inline">•</span>
               <span>Regional Geo-Blocking Supported</span>
             </div>
           </div>

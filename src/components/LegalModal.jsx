@@ -8,8 +8,8 @@ export default function LegalModal({ isOpen, onClose, initialTab = 'terms' }) {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 overflow-y-auto bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
-      <div className="relative w-full max-w-3xl bg-zinc-950 border border-zinc-800 rounded-lg p-6 sm:p-8 shadow-2xl my-8 max-h-[85vh] flex flex-col">
+    <div className="fixed inset-0 z-50 overflow-y-auto bg-black/80 backdrop-blur-sm flex items-start sm:items-center justify-center p-3 sm:p-4">
+      <div className="relative w-full max-w-3xl bg-zinc-950 border border-zinc-800 rounded-lg p-5 sm:p-8 shadow-2xl my-auto max-h-[90vh] flex flex-col">
         
         {/* Header */}
         <div className="flex items-center justify-between pb-4 border-b border-zinc-800 flex-shrink-0">
