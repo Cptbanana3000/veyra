@@ -33,8 +33,12 @@ export default function Navbar({ onOpenApply }) {
           
           {/* Logo */}
           <a href="#" className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-md bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-100 font-semibold text-xs tracking-wider">
-              V
+            <div className="w-10 h-10 rounded-md bg-black border border-zinc-800 flex items-center justify-center overflow-hidden flex-shrink-0">
+              <img
+                src="/logo.png"
+                alt="Veyra Agency Logo"
+                className="w-full h-full object-cover scale-[1.55]"
+              />
             </div>
             <div>
               <div className="flex items-center gap-2">

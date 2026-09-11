@@ -10,11 +10,18 @@ export default function Footer({ onOpenApply, onOpenTerms, onOpenPrivacy, onOpen
           
           {/* Brand & Partner Notice */}
           <div className="lg:col-span-2 space-y-4">
-            <div className="flex items-center gap-2.5">
-              <div className="w-7 h-7 rounded-md bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-100 font-semibold text-xs">
-                V
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-md bg-black border border-zinc-800 flex items-center justify-center overflow-hidden flex-shrink-0">
+                <img
+                  src="/logo.png"
+                  alt="Veyra Agency Logo"
+                  className="w-full h-full object-cover scale-[1.55]"
+                />
               </div>
-              <span className="font-semibold text-sm tracking-tight text-zinc-100">VEYRA TALENT AGENCY</span>
+              <div>
+                <span className="font-semibold text-sm tracking-tight text-zinc-100">VEYRA TALENT AGENCY</span>
+                <p className="text-[11px] text-zinc-500">Authorized Talent Partner</p>
+              </div>
             </div>
 
             <p className="text-zinc-500 text-xs leading-relaxed max-w-sm">
